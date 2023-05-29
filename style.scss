@@ -1,0 +1,214 @@
+//Global reset
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input, button {
+    font: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+//mixins and variables
+
+$bg-color: #FFFFF6;
+$accent-color: #3263be;
+
+@mixin minimum-text-shadow {
+    text-shadow: 1px 1px 1px black;
+}
+
+@mixin flex-full-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin margin($top, $left, $bottom, $right) {
+    margin-top: $top;
+    margin-left: $left;
+    margin-bottom: $bottom;
+    margin-right: $right;
+}
+
+@mixin text($font-size, $font-weight, $font-family) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+}
+
+@mixin b-position($position, $size) {
+    background-position: $position;
+    background-size: $size;
+} 
+
+//Styling header
+
+
+//Essay section styling
+
+.one {
+    background-image: url(./assets/images/image1.webp);
+    @include b-position(30%, cover);
+}
+
+.two {
+    background-image: url(./assets/images/image2.webp);
+    @include b-position(20%, cover)
+}
+
+.three {
+    background-image: url(./assets/images/image3.webp);
+    @include b-position(50%, 100%)
+}
+
+.four {
+    background-image: url(./assets/images/image4.webp);
+    @include b-position(20%, 100%)
+}
+
+//layout styling
+
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-areas: "header header"
+    "one one"
+    "two two"
+    "three three"
+    "four four"
+    "footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+@media all and (min-width: 500px) {
+    body {
+        grid-template-areas: "one two"
+        "header header"
+        "three four"
+        "footer footer";
+        grid-template-rows: 40% 17% 40% 3%;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+//Styling header
+
+header {
+    grid-area: header;
+    padding: .25em;
+    @include flex-full-center();
+    
+    background-color: $bg-color;
+    flex-direction: column;
+    h1 {
+        font-family: 'Ultra', sans-serif;
+    }
+    p {
+        font-family: 'PT Sans', serif;
+    }
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+        transition: .15s ease-in-out;
+        &:hover{
+            background-color: $accent-color;
+            color: $bg-color;
+        }
+    }
+}
+
+
+//Styling essay sections
+
+.essay {
+    @include flex-full-center();
+    flex-direction: column;
+    color:$bg-color;
+    gap: .5em;
+    transition: all .2s ease-in-out;
+    @include minimum-text-shadow();
+    &:hover {
+        filter: saturate(1.5)
+    }
+    h2 {
+        font-size: 10em;
+    }
+
+    h3, button {
+        @include text(1em, 900, 'PT Sans')
+    }
+
+    button {
+        padding: .5em;
+        border: 1px solid $bg-color;
+        border-radius: .15em;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        margin: .5em;
+
+        &:hover {
+            padding: .75em;
+        }
+    }
+
+    a, a:active, a:visited, a:link {
+        border:inherit;
+        color: $bg-color;
+      }
+}
+
+.one {
+    grid-area: one;
+    button:hover {
+        background-color: #3263bebd;
+    }
+}
+
+.two {
+    grid-area: two;
+    button:hover {
+        background-color: #d2800ecb;
+    }
+}
+
+.three {
+    grid-area: three;
+    button:hover {
+        background-color: #d2800ecb;
+    }
+}
+
+.four {
+    grid-area: four;
+    button:hover {
+        background-color: #3263bebd;
+    }
+}
+
+//Styling footer
+
+footer {
+    grid-area: footer;
+    background-color: #171716;
+    color: #8d8d8b;
+    padding: .25em;
+    @include text(.75em, 100, 'PT SANS');
+}

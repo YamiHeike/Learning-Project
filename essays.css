@@ -1,0 +1,352 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  font-size: 1.25em;
+  background-color: #FFFFF6;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+input, button {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+.header-one {
+  padding: 1.75em;
+  padding: 1.75em;
+  text-shadow: 1px 1px 1px black;
+  background: url(./assets/images/image1.webp);
+  background-position: 40%;
+}
+.header-one h1 {
+  font-size: 2em;
+  font-family: "PT Sans";
+  font-weight: 900;
+  text-shadow: 1px 1px 1px black;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #FFFFF6;
+}
+.header-one span {
+  font-size: 2.5em;
+  font-family: "PT Sans";
+  font-weight: 100;
+  text-shadow: 1px 1px 1px black;
+}
+@media all and (max-width: 500px) {
+  .header-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.15em;
+  }
+  .header-one h1 {
+    padding: 1.15em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+  .header-one h1 span {
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+.header-two {
+  padding: 1.75em;
+  padding: 1.75em;
+  text-shadow: 1px 1px 1px black;
+  background: url(./assets/images/image2.webp);
+}
+.header-two h1 {
+  font-size: 2em;
+  font-family: "PT Sans";
+  font-weight: 900;
+  text-shadow: 1px 1px 1px black;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #FFFFF6;
+}
+.header-two span {
+  font-size: 2.5em;
+  font-family: "PT Sans";
+  font-weight: 100;
+  text-shadow: 1px 1px 1px black;
+}
+@media all and (max-width: 500px) {
+  .header-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.15em;
+  }
+  .header-two h1 {
+    padding: 1.15em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+  .header-two h1 span {
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+.header-three {
+  padding: 1.75em;
+  padding: 1.75em;
+  text-shadow: 1px 1px 1px black;
+  background: url(./assets/images/image3.webp);
+  background-size: 100%;
+}
+.header-three h1 {
+  font-size: 2em;
+  font-family: "PT Sans";
+  font-weight: 900;
+  text-shadow: 1px 1px 1px black;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #FFFFF6;
+}
+.header-three span {
+  font-size: 2.5em;
+  font-family: "PT Sans";
+  font-weight: 100;
+  text-shadow: 1px 1px 1px black;
+}
+@media all and (max-width: 500px) {
+  .header-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.15em;
+  }
+  .header-three h1 {
+    padding: 1.15em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+  .header-three h1 span {
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+.header-four {
+  padding: 1.75em;
+  padding: 1.75em;
+  text-shadow: 1px 1px 1px black;
+  background: url(./assets/images/image4.webp);
+  background-size: 100%;
+}
+.header-four h1 {
+  font-size: 2em;
+  font-family: "PT Sans";
+  font-weight: 900;
+  text-shadow: 1px 1px 1px black;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #FFFFF6;
+}
+.header-four span {
+  font-size: 2.5em;
+  font-family: "PT Sans";
+  font-weight: 100;
+  text-shadow: 1px 1px 1px black;
+}
+@media all and (max-width: 500px) {
+  .header-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.15em;
+  }
+  .header-four h1 {
+    padding: 1.15em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+  .header-four h1 span {
+    font-size: 1.25em;
+    font-family: "PT Sans";
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .article-four h2 {
+    margin-bottom: 0.92em;
+    font-size: 1.25em;
+  }
+}
+article {
+  margin: 1.2em auto;
+  width: 80%;
+  padding: 1.25em 2.75em;
+  line-height: 1.5;
+}
+article h2 {
+  font-size: 1.5em;
+  font-family: "Ultra";
+  font-weight: 500;
+  margin-bottom: 0.25em;
+  padding: 0.5em;
+}
+article p {
+  text-indent: 5%;
+  margin-bottom: 0.25em;
+  font-size: 1em;
+  font-family: "PT Sans";
+  font-weight: 300;
+}
+article .intr {
+  position: relative;
+  padding: 0.5em;
+  margin: 0.25em;
+  border-radius: 0.5em;
+  background-color: #3263be;
+  color: #FFFFF6;
+  text-indent: 0%;
+}
+article .intr button {
+  position: absolute;
+  bottom: 0.95em;
+  right: 0.75em;
+  padding: 0.25em;
+  font-size: 0.55em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #FFFFF6;
+  border-radius: 0.25em;
+  transition: all 0.2s ease-in-out;
+}
+article .intr button:hover, article .intr button:focus {
+  background-color: #FFFFF6;
+  color: #3263be;
+}
+article a {
+  color: #3263be;
+  background-color: inerit;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+article a p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-indent: 0%;
+  margin: 0.75em auto 0.25em;
+}
+article a p:hover, article a p:focus {
+  color: #FFFFF6;
+  background-color: #3263be;
+  border-radius: 0.15em;
+}
+
+@media all and (max-width: 500px) {
+  article {
+    margin: 0.75em auto;
+    width: 90%;
+    padding: 0;
+    font-size: 0.9em;
+  }
+  article h2 {
+    margin: 0 auto;
+    text-indent: 0;
+    padding: 0;
+  }
+  article p {
+    text-indent: 0%;
+  }
+  .intro {
+    margin: 0 auto;
+  }
+}
+footer {
+  grid-area: footer;
+  background-color: #171716;
+  color: #8d8d8b;
+  padding: 0.5em;
+  font-size: 0.75em;
+  font-family: 100;
+  font-weight: "PT SANS";
+}
+
+.article-four {
+  min-height: 70dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.article-four form {
+  margin: 1.2em;
+}
+.article-four #fact-generator {
+  width: 100%;
+}
+.article-four #fact-generator button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #3263be;
+  color: #FFFFF6;
+  margin-top: 1.25em;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.article-four #fact-generator button:hover, .article-four #fact-generator button:focus {
+  background-color: #636e79;
+}
+.article-four #fact-generator button label {
+  font-size: 1em;
+  font-family: "PT Sans";
+  font-weight: 500;
+}
+.article-four #fact-generator button select {
+  margin: 0.75em;
+}
+.article-four a {
+  width: 100%;
+}
+
+.footer-four {
+  display: block;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
