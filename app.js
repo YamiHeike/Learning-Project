@@ -141,12 +141,3 @@ generator.form.addEventListener('submit', (e) => {
     let numOfFact = Math.floor(Math.random() * 20) +1;
     createDiv(numOfFact);
 })
-
-//Short event for essay 1 close button
-
-const close = document.querySelector('.close-btn')
-const intro = document.querySelector('.intr')
-
-close.addEventListener('click', () => {
-    intro.parentNode.removeChild(intro)
-})
